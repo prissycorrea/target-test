@@ -42,6 +42,20 @@ Calcular a soma dos números de 1 até 13 utilizando estruturas de controle de f
     python soma.py
     ```
 
+O resultado da soma é 91
+
+```bash
+INDICE = 13
+SOMA = 0
+K = 0 
+
+while K < INDICE:
+    K = K + 1
+    SOMA = SOMA + K
+
+print(SOMA)  #Resultado: 91
+```
+
 #
 
 ### Teste 02 - Sequência de Fibonacci
