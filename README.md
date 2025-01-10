@@ -60,6 +60,7 @@ Verificar se um número informado pelo usuário pertence à sequência de Fibona
     ```bash
     python fibonacci.py
     ```
+<img src="https://github.com/prissycorrea/target-test/blob/master/assets/images/02-fibonacci.png">
 
 #
 
@@ -81,6 +82,8 @@ Analisar o faturamento diário de uma distribuidora, identificando o menor e mai
     python faturamento.py
     ```
 
+<img src="https://github.com/prissycorrea/target-test/blob/master/assets/images/03-faturamento.png">
+
 #
 
 ### Teste 04 - Faturamento Mensal por Estado
@@ -100,6 +103,7 @@ Calcular o percentual de representação que cada estado teve dentro do valor to
     ```bash
     python faturamento-mensal-estado.py
     ```
+<img src="https://github.com/prissycorrea/target-test/blob/master/assets/images/04-faturamento-mensal.png">
 
 #
 
@@ -119,3 +123,5 @@ Desenvolver um programa que inverta os caracteres de uma string fornecida pelo u
     ```bash
     python inversor.py
     ```
+
+<img src="https://github.com/prissycorrea/target-test/blob/master/assets/images/05-inversor.png">
