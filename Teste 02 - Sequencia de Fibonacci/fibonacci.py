@@ -10,12 +10,41 @@ def pertence_fibonacci(n):
 
     return fib2 == n
 
-#Entrada do usuário para receber o número a ser verificado
-try:
-    numero = int(input("Digite um número para verificar se pertence à sequência de Fibonacci: "))
-    if pertence_fibonacci(numero):
-        print(f"O número {numero} pertence à sequência de Fibonacci.")
-    else:
-        print(f"O número {numero} não pertence à sequência de Fibonacci.")
-except ValueError:
-    print("Por favor, insira um número válido.")
+def deseja_continuar():
+    while True:
+        resposta = input("Deseja verificar outro número? (s/n): ").strip().lower()
+        if resposta in ['s', 'sim']:
+            return True
+        elif resposta in ['n', 'não', 'nao']:
+            return False
+        else:
+            print("Resposta inválida. Por favor, responda com 's' para sim ou 'n' para não.")
+
+
+def main():
+    print("Programa para Verificar se um Número Pertence à Sequência de Fibonacci")
+    print("-" * 70)
+
+    while True:
+        #Recebe a entrada do user
+        entrada = input("Digite um número para verificar: ")
+
+        try:
+            numero = int(entrada)
+            if pertence_fibonacci(numero):
+                print(f"O número {numero} pertence à sequência de Fibonacci.\n")
+            else:
+                print(f"O número {numero} não pertence à sequência de Fibonacci.\n")
+        except ValueError:
+            print("Entrada inválida. Por favor, insira um número inteiro.\n")
+            continue
+
+        #Pergunta ao user se deseja continuar
+        if not deseja_continuar():
+            print("Programa encerrado. Até mais!")
+            break
+        else:
+            print("-" * 70)
+
+if __name__ == "__main__":
+    main()
